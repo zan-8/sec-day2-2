@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assessment day 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        position: relative;
+        height: 80px;
+      }
+
+      header > .child1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        margin-left: 30px;
+        background-color: darkgray;
+      }
+      header > .child2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      header > .child3 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-right: 30px;
+      }
+
+      #section2 {
+        height: 400px;
+        background-color: darkgrey;
+        position: relative;
+      }
+
+      #section2 > span {
+        /* background-color: green; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(-50%) translateY(-50%) */
+        transform: translate(-50% -50%); /* shorthand */
+      }
+
+      #section3 {
+        position: relative;
+      }
+
+      #section3 > .child1 {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section3 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 200px;
+      }
+
+      #section3 > .child1 > .box {
+        width: 80%;
+        height: 80%;
+        background-color: darkgrey;
+        margin: 20px;
+      }
+
+      #section3 > .child2 > span {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <div class="child1">logo</div>
+      <div class="child2">
+        <span style="padding-right: 20px">HOME</span>
+        <span style="padding-right: 20px">ABOUT</span>
+        <span style="padding-right: 20px">DESTINATION</span>
+        <span>GALLERY</span>
+      </div>
+      <div class="child3">
+        <img src="./asset/magnifying-glass.svg" alt="search icon" />
+      </div>
+    </header>
+
+    <!--SECTION 2-->
+    <section id="section2">
+      <span>Master slider</span>
+    </section>
+    <!--SECTION 3-->
+    <section id="section3">
+      <div class="child1">
+        <div class="box"></div>
+      </div>
+      <div class="child2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          possimus repudiandae, officiis numquam quae repellat nulla asperiores
+          nobis illo te mpore ex eaque nostrum aliquam distinctio eos cumque
+          minima! Unde, optio distinctio. Quas perspiciatis minus reprehenderit
+          ipsa? Quis iste, cumque repellendus, atque dolorem voluptates
+          voluptate nam optio nesciunt voluptas animi quia reprehenderit
+          possimus eligendi sunt. Similique itaque fugiat laborum minus tempora
+          mollitia aperiam dolore tenetur eius pariatur. Veniam odio tempore
+          mollitia ad, repudiandae veritatis ullam magni, quod itaque cumque
+          voluptatem asperiores ipsa maxime. Possimus, nihil omnis? Accusantium
+          perferendis ipsum consequatur perspiciatis alias odio quo amet nostrum
+          voluptatibus suscipit. Obcaecati, minus tenetur.
+        </p>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </body>
+</html>
